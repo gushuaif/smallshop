@@ -2,11 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 // Import Swiper Vue.js components
-import VueAwesomeSwiper from 'vue-awesome-swiper'
+import VueAwesomeSwiper from "vue-awesome-swiper";
 // Import Swiper styles
-import 'swiper/css/swiper.css'
+import "swiper/css/swiper.css";
 
-
+Vue.prototype.$bus = new Vue()
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
 new Vue({
